@@ -1,0 +1,173 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Улучшенная читаемость текста */
+    overflow-x: hidden; /* Убираем горизонтальный скролл */
+}
+
+/* Шапка */
+header {
+    background-color: #003366; /* Синий цвет UNIME */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #002244; /* Тёмно-синий */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-weight: bold; /* Подчеркиваем важность ссылок */
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3; /* Темно-синий */
+    border-radius: 4px; /* Добавление округления */
+}
+
+/* Основной контент */
+main {
+    padding: 30px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 90%; /* Централизуем основной блок */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    border: 1px solid #ddd; /* Линии разделения */
+    padding: 12px;
+}
+
+table th {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Чередование цветов */
+}
+
+table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+table tr:hover {
+    background-color: #cfe2f3; /* Цвет строки при наведении */
+}
+
+/* Кнопки */
+.btn-primary {
+    background-color: #003366;
+    border-color: #003366;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Поля ввода */
+input[type="text"], input[type="date"] {
+    padding: 10px;
+    width: calc(50% - 22px); /* Поля ввода шириной 50% */
+    margin: 10px auto;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="date"]:focus {
+    border-color: #003366; /* Цвет рамки при фокусе */
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 51, 102, 0.5); /* Тень при фокусе */
+}
+
+/* Футер */
+footer {
+    background-color: #002244; /* Тёмно-синий */
+    color: white;
+    font-size: 0.9rem;
+    padding: 20px;
+    text-align: center;
+    border-top: 4px solid #003366; /* Полоса сверху */
+}
+
+footer a {
+    color: #FFD700; /* Желтый цвет ссылок */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #fff700; /* Немного ярче при наведении */
+}
+
+/* Контейнер контактов */
+.contact-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-container h2 {
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.contact-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-container ul li {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1rem;
+}

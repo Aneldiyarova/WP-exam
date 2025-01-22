@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .logo {
+            max-height: 60px;
+        }
+
+        header {
+            background: linear-gradient(45deg, #003366, #007bff);
+            color: white;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: normal;
+        }
+
+        .navbar-nav .nav-link i {
+            margin-right: 5px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            text-decoration: underline;
+            color: #FFD700;
+        }
+
+        footer {
+            background: linear-gradient(45deg, #003366, #0056b3);
+            color: white;
+        }
+
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .goals, .reviews {
+            margin-top: 30px;
+        }
+
+        .list-group-item {
+            font-size: 1.1rem;
+            padding: 15px;
+        }
+
+        .card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-footer {
+            font-size: 0.9rem;
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="https://www.unime.it/sites/default/files/logo.png" alt="UNIME Logo" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="schedule.php"><i class="fas fa-calendar-alt"></i> Timetable</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.php"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1><i class="fas fa-university"></i> About Us</h1>
+        <p>Welcome to the University Portal! Our mission is to provide an intuitive platform for students and staff to manage schedules, events, and communication.</p>
+        <p>Founded in 1548, the University of Messina has a rich history of academic excellence and research. With state-of-the-art facilities, we offer a wide range of programs and services for students worldwide.</p>
+
+        <!-- Галерея -->
+        <div class="gallery">
+            <h3><i class="fas fa-images"></i> Gallery</h3>
+            <img src="https://fotoblik.ru/wp-content/uploads/2023/09/studencheskaia-auditoriia-amfiteatr-mgu-1.webp" alt="Campus 1">
+            <img src="https://international.unime.it/sites/sten/files/styles/large/public/2022-10/ateneo3.jpg?itok=__MA0vtS" alt="Campus 2">
+        </div>
+
+        <!-- Цели -->
+        <div class="goals">
+            <h3><i class="fas fa-bullseye"></i> Our Goals</h3>
+            <ul class="list-group">
+                <li class="list-group-item"><i class="fas fa-check-circle text-success"></i> Provide quality education for all students.</li>
+                <li class="list-group-item"><i class="fas fa-users text-primary"></i> Foster a vibrant and inclusive community.</li>
+                <li class="list-group-item"><i class="fas fa-lightbulb text-warning"></i> Promote research and innovation.</li>
+                <li class="list-group-item"><i class="fas fa-laptop text-info"></i> Enhance the digital experience for students and staff.</li>
+            </ul>
+        </div>
+
+        <!-- Отзывы -->
+        <div class="reviews">
+            <h3><i class="fas fa-comments"></i> What Students Say</h3>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <p class="card-text">"The University of Messina has provided me with incredible opportunities to grow both academically and personally."</p>
+                    <footer class="card-footer">- Maria Rossi</footer>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text">"The supportive community and dedicated faculty make learning a joy here."</p>
+                    <footer class="card-footer">- Luca Bianchi</footer>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-3">
+        <p>© 2025 University Portal</p>
+        <p><a href="https://www.unime.it" target="_blank">Stay connected: Official Website</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+</body>
+</html>
